@@ -63,7 +63,7 @@ student_data_frame = pd.DataFrame(student_dict)
 # allows iterations over rows
 for (index_of_row, data_of_row) in student_data_frame.iterrows():
   print(data_of_row) #pd series
-  print(data_of_row.student) #specify which row
+  print(data_of_row.student) #specify which column
 
   if data_of_row.student == "Caroline":
     print(data_of_row.score)
