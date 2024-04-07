@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blogs</title>
+    </head>
+
+    <body>
+        <h1>Navigate to <span style="color:blueviolet;">/guess/[yourName]</span> route,</h1>
+        <h1>I will guess your gender and age based on your name!</h1>
+        <!-- generates & calls the link that takes the user to '/blog' route -->
+        <a href="{{ url_for('get_blog', num=7) }}"><h2>Check out my blogs</h2></a>
+        <footer>ⓒ{{ year }} built by Selina</footer>
+    </body>
+</html>
