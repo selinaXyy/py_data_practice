@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<h1>Login</h1>
+			<!-- add 'novalidate' attribute ensures all users can see field validation 
+		<form method="POST" action="{{ url_for('login') }}" novalidate> ALWAYS a good idea to use dynamically built urls like this
+			{{ form.csrf_token }}
+			<p> setting it to <p> helps with layout
+				{{ form.email.label }} <br> {{ form.email(size=30) }}<br>
+					if error occured during form submission (email)
+				{% for err in form.email.errors %}
+					<span style="color:red;">{{ err }}</span><br>
+				{% endfor %}
+			</p>
+			<p>
+				{{ form.password.label }} <br> {{ form.password(size=30) }}
+					if error occured during form submission (password)
+				{% for err in form.password.errors %}
+					<span style="color:red;">{{ err }}</span><br>
+				{% endfor %}
+			</p>
+			{{ form.submit }}
+		</form> -->
+		{{ render_form(form) }}
+	</div>
+{% endblock %}
